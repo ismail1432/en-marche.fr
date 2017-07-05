@@ -334,6 +334,14 @@
         ######################################################
          -->
 
+        <service id="app.admin.summary" class="AppBundle\Admin\SummaryAdmin">
+            <tag name="sonata.admin" manager-type="orm" label="CV des membres" group="CV" />
+
+            <argument />
+            <argument>AppBundle\Entity\Summary</argument>
+            <argument />
+        </service>
+
         <service id="app.admin.summary_mission_type" class="AppBundle\Admin\MissionTypeAdmin">
             <tag name="sonata.admin" manager-type="orm" label="Type de missions" group="CV" />
 
